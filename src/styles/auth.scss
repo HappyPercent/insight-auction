@@ -1,0 +1,26 @@
+.auth {
+  max-width: 400px;
+
+  &__close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    z-index: 2;
+    height: 32px;
+    font-size: 32px;
+    display: flex;
+  }
+
+  &__error {
+    color: #dc3545;
+    margin-bottom: 4px;
+  }
+
+  &__rules-text {
+    font-family: "open sans condensed", sans-serif;
+    max-height: 400px;
+    font-size: 16px;
+    white-space: break-spaces;
+  }
+}

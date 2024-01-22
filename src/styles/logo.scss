@@ -1,0 +1,14 @@
+.logo {
+  padding: 16px 0 32px 0;
+  img {
+    width: 335px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    img {
+      width: 250px;
+    }
+  }
+}

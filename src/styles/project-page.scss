@@ -1,0 +1,45 @@
+.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__main-image {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+  }
+
+  &__main-descr {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    font-size: 25px;
+  }
+
+  &__images-layout {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    margin-bottom: 0.5rem;
+
+    img {
+      height: 300px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-page {
+    &__images-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+}

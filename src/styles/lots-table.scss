@@ -1,0 +1,46 @@
+.lots-table {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+  &__author {
+    font-family: pacifica-w00-condensed, fantasy;
+    margin: 32px 0;
+    font-size: 55px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  &__info {
+    color: #545454;
+    font-size: 20px;
+    line-height: 27px;
+
+    &_price {
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .lots-table {
+    &__image {
+      height: 250px;
+    }
+    &__author {
+      font-size: 35px;
+    }
+  }
+}

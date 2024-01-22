@@ -1,0 +1,22 @@
+.account-info {
+  cursor: pointer;
+  font-size: 17px;
+
+  &__email {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: none;
+    font-size: 17px;
+    box-shadow: none !important;
+    white-space: nowrap;
+  }
+
+  &__item {
+    padding: 0 16px;
+    color: #000000 !important;
+
+    &:active {
+      background-color: #e9ecef;
+    }
+  }
+}

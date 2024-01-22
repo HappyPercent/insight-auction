@@ -1,0 +1,27 @@
+.table {
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 1px;
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 64px) / 3));
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+
+  &_small {
+    margin: 0;
+  }
+
+  &_project {
+    grid-template-columns: repeat(3, calc((100% - 16px) / 3));
+    grid-column-gap: 8px;
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .table {
+    grid-template-columns: repeat(2, calc((100% - 16px) / 2));
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}

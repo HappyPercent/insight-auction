@@ -1,0 +1,49 @@
+.ticker {
+  width: 100%;
+  height: 54px;
+  position: relative;
+  font-family: open sans condensed, sans-serif;
+  background-color: rgb(63, 17, 68);
+  overflow: hidden;
+
+  &__text {
+    white-space: nowrap;
+    position: absolute;
+    top: 7px;
+    font-size: 30px;
+    line-height: 41px;
+    color: white;
+    font-weight: bold;
+    animation: move 60s linear infinite;
+  }
+
+  &_main {
+    background-color: rgb(204, 204, 204);
+  }
+
+  &_main &__text {
+    text-shadow: #ffffff 3px 3px 0px;
+    color: black;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@media (max-width: 1024px) {
+  .ticker {
+    height: 45px;
+    &__text {
+      font-size: 30px;
+      line-height: 45px;
+      top: 0px;
+    }
+  }
+}
